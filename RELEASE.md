@@ -1,5 +1,11 @@
 # Release Notes
 
+## 2.5.4 (Beta)
+**Released:**
+
+### Developer
+- Added optional parameter to `WEPS.ResetRoleWeaponCache` to only clear the cache of a single role rather than all roles
+
 ## 2.5.3 (Beta)
 **Released: September 5th, 2026**
 
