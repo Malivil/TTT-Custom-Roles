@@ -11,7 +11,6 @@ local MathMax = math.max
 local MathMin = math.min
 local MathRandom = math.random
 local MathRound = math.Round
-local RunHook = hook.Run
 
 util.AddNetworkString("TTT_UpdateShadowWins")
 util.AddNetworkString("TTT_ResetShadowWins")

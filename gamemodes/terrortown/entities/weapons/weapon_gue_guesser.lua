@@ -15,7 +15,6 @@ local TableHasValue = table.HasValue
 local MathMax = math.max
 local MathClamp = math.Clamp
 local MathCeil = math.ceil
-local RunHook = hook.Run
 local CallHook = hook.Call
 
 if CLIENT then
