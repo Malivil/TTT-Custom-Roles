@@ -3,6 +3,9 @@
 ## 2.5.4 (Beta)
 **Released:**
 
+### Fixes
+- Fixed player weapons still being green in firstperson view if they were a zombie who changes roles while their claws were out
+
 ### Developer
 - Added optional parameter to `WEPS.ResetRoleWeaponCache` to only clear the cache of a single role rather than all roles
 
