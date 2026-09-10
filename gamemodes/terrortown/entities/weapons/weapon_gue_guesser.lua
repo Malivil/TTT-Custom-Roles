@@ -133,13 +133,8 @@ function SWEP:PrimaryAttack()
                     CallHook("TTTPlayerRoleChangedByItem", nil, owner, ply, self)
 
                     owner:SetRole(role)
-                    owner:StripRoleWeapons()
-                    RunHook("PlayerLoadout", owner)
                     ply:MoveRoleState(owner)
-
                     ply:SetRole(ROLE_GUESSER)
-                    ply:StripRoleWeapons()
-                    RunHook("PlayerLoadout", ply)
 
                     SendFullStateUpdate()
 

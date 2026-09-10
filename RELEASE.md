@@ -8,6 +8,7 @@
 
 ### Developer
 - Added optional parameter to `WEPS.ResetRoleWeaponCache` to only clear the cache of a single role rather than all roles
+- Changed `plymeta:SetRole` to automatically strip role old weapons and give new role weapons
 
 ## 2.5.3 (Beta)
 **Released: September 5th, 2026**

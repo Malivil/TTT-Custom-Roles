@@ -268,8 +268,6 @@ local function CreateBuffTimer(shadow, target)
             end
 
             shadow:SetRole(role)
-            shadow:StripRoleWeapons()
-            RunHook("PlayerLoadout", shadow)
             SendFullStateUpdate()
 
             -- Update the player's health
@@ -289,13 +287,8 @@ local function CreateBuffTimer(shadow, target)
             end
 
             shadow:SetRole(role)
-            shadow:StripRoleWeapons()
-            RunHook("PlayerLoadout", shadow)
-
-            target:SetRole(ROLE_SHADOW)
-            target:StripRoleWeapons()
-            RunHook("PlayerLoadout", target)
             target:MoveRoleState(shadow)
+            target:SetRole(ROLE_SHADOW)
 
             target:Kill()
 
@@ -451,8 +444,6 @@ local function HandleShadowFailure(shadow)
 
         message = message .. " As punishment, you have become " .. ROLE_STRINGS_EXT[target_role]
         shadow:SetRole(target_role)
-        shadow:StripRoleWeapons()
-        RunHook("PlayerLoadout", shadow)
 
         local maxhealth = shadow:GetMaxHealth()
         local health = shadow:Health()
