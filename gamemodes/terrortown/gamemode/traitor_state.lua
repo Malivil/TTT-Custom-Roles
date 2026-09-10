@@ -1,5 +1,4 @@
 local concommand = concommand
-local hook = hook
 local IsValid = IsValid
 local net = net
 local player = player
