@@ -5,6 +5,7 @@
 
 ### Fixes
 - Fixed player weapons still being green in firstperson view if they were a zombie who changes roles while their claws were out
+- Ported "Fixed regressions with TTT voice chat HUD" from base TTT
 
 ### Developer
 - Added optional parameter to `WEPS.ResetRoleWeaponCache` to only clear the cache of a single role rather than all roles
